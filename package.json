@@ -1,0 +1,25 @@
+{
+  "name": "create-typescript-component-react",
+  "version": "1.0.1",
+  "description": "a simple package to generate react component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvestredavid/createComponentReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylvestredavid/createComponentReact/issues"
+  },
+  "homepage": "https://github.com/sylvestredavid/createComponentReact#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "bin": {
+    "create-react-component": "./index.js"
+  }
+}
