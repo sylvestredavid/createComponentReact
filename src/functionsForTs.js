@@ -8,11 +8,11 @@ module.exports = {
         let res = []
 
         do {
-            const propName = rl.question('Quel est le nom de la prop ? ')
-            const propType = rl.question('Quel est le type de la prop ? ')
-            const propOpt = utils.promptBoolean('La prop est elle optionelle ?')
+            const propName = rl.question('What is the name of the prop ? ')
+            const propType = rl.question('What is the type of the prop ? ')
+            const propOpt = utils.promptBoolean('Is the prop optional ?')
             res.push({propName, propType, propOpt})
-            moreProps = utils.promptBoolean('Le composant a-t-il d\'autres props ?')
+            moreProps = utils.promptBoolean('Does the component have other props ?')
         } while (moreProps)
         return res
     },

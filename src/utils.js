@@ -2,19 +2,19 @@ const rl = require('readline-sync')
 
 module.exports = {
     promptBoolean: (question) => {
-        let res = rl.question(`${question} (o/n) `)
+        let res = rl.question(`${question} (y/n) `)
 
-        let wrongAnwser = res.toLowerCase() !== 'o' && res.toLowerCase() !== 'n'
+        let wrongAnwser = res.toLowerCase() !== 'y' && res.toLowerCase() !== 'n'
 
         while (wrongAnwser) {
-            console.log('Merci de répondre oui ou non.')
+            console.log('Please answer yes or no.')
 
-            res = rl.question(`${question} (o/n)`)
+            res = rl.question(`${question} (y/n)`)
 
-            wrongAnwser = res.toLowerCase() !== 'o' && res.toLowerCase() !== 'n'
+            wrongAnwser = res.toLowerCase() !== 'y' && res.toLowerCase() !== 'n'
         }
 
-        return res.toLowerCase() === 'o'
+        return res.toLowerCase() === 'y'
     },
 
     generateProps: (props) => {

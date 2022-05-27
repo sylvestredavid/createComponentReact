@@ -8,9 +8,9 @@ module.exports = {
         let res = []
 
         do {
-            const propName = rl.question('Quel est le nom de la prop ? ')
+            const propName = rl.question('What is the name of the prop ? ')
             res.push({propName})
-            moreProps = utils.promptBoolean('Le composant a-t-il d\'autres props ?')
+            moreProps = utils.promptBoolean('Does the component have other props ?')
         } while (moreProps)
         return res
     },
